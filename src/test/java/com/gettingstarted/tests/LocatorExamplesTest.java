@@ -2,19 +2,20 @@ package com.gettingstarted.tests;
 
 import net.serenitybdd.junit.runners.SerenityRunner;
 import net.thucydides.core.annotations.Managed;
-import net.thucydides.core.annotations.Title;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.openqa.selenium.WebDriver;
 
 @RunWith(SerenityRunner.class)
-public class MyFirstTest {
-	@Managed
+public class LocatorExamplesTest {
+    @Managed
     WebDriver driver;
 
-	@Title("This is my first Serenity method")
+    LocatorExamplesPage page;
+
     @Test
-    public void navigateToGooglePage() {
-        driver.navigate().to("https://www.google.com/");
+    public void tc1() {
+        page.clickOnLink();
+        page.grabAllLinks();
     }
 }
