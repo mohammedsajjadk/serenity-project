@@ -1,4 +1,4 @@
-package com.gettingstarted.tests;
+package com.gettingstarted.JavaScript;
 
 import net.serenitybdd.junit.runners.SerenityRunner;
 import net.thucydides.core.annotations.Managed;
@@ -7,16 +7,14 @@ import org.junit.runner.RunWith;
 import org.openqa.selenium.WebDriver;
 
 @RunWith(SerenityRunner.class)
-public class LocatorExamplesTest {
+public class JSTest {
     @Managed
     WebDriver driver;
 
-    LocatorExamplesPage page;
+    private JSPage page;
 
     @Test
     public void tc1() {
-        /*page.clickOnLink();
-        page.grabAllLinks();*/
-        page.serenity_clickOnLink();
+        page.executeJS();
     }
 }

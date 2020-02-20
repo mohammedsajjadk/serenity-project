@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="1" name="com.gettingstarted.interactingWithHtmlTables.TableTest" skipped="0" tests="1" time="8.66" timestamp="2020-02-20 12:47:07"><testcase classname="com.gettingstarted.interactingWithHtmlTables.TableTest" name="Tc1"><failure message="Expecting a table with at least one row where: [First Name 'Fra21nk']" type="java.lang.AssertionError">Expecting a table with at least one row where: [First Name 'Fra21nk']</failure><system-err>Expecting a table with at least one row where: [First Name 'Fra21nk']&#13;
+com.gettingstarted.interactingWithHtmlTables.TablePage.assertOnTableElements(TablePage.java:68)&#13;
+com.gettingstarted.interactingWithHtmlTables.TableTest.tc1(TableTest.java:24)&#13;
+</system-err></testcase></testsuite>

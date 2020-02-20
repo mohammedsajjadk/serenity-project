@@ -1,4 +1,4 @@
-package com.gettingstarted.tests;
+package com.gettingstarted.interactingWithCheckBoxes;
 
 import net.serenitybdd.junit.runners.SerenityRunner;
 import net.thucydides.core.annotations.Managed;
@@ -7,16 +7,15 @@ import org.junit.runner.RunWith;
 import org.openqa.selenium.WebDriver;
 
 @RunWith(SerenityRunner.class)
-public class LocatorExamplesTest {
+public class CheckBoxTest {
+
     @Managed
     WebDriver driver;
 
-    LocatorExamplesPage page;
+    CheckBoxPage checkBoxPage;
 
     @Test
     public void tc1() {
-        /*page.clickOnLink();
-        page.grabAllLinks();*/
-        page.serenity_clickOnLink();
+        checkBoxPage.checkBoxTest();
     }
 }
